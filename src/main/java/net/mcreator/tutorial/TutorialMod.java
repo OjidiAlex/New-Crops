@@ -26,6 +26,11 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.tutorial.init.TutorialModTabs;
+import net.mcreator.tutorial.init.TutorialModItems;
+import net.mcreator.tutorial.init.TutorialModFeatures;
+import net.mcreator.tutorial.init.TutorialModBlocks;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -39,8 +44,12 @@ public class TutorialMod {
 	private static int messageID = 0;
 
 	public TutorialMod() {
-
+		TutorialModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		TutorialModBlocks.REGISTRY.register(bus);
+		TutorialModItems.REGISTRY.register(bus);
+
+		TutorialModFeatures.REGISTRY.register(bus);
 
 	}
 
