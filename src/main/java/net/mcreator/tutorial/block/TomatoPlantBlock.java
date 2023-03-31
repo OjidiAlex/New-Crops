@@ -72,4 +72,11 @@ public class TomatoPlantBlock extends FlowerBlock {
 			return world != null && pos != null ? BiomeColors.getAverageGrassColor(world, pos) : GrassColor.get(0.5D, 1.0D);
 		}, TutorialModBlocks.TOMATO_PLANT.get());
 	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void itemColorLoad(ColorHandlerEvent.Item event) {
+		event.getItemColors().register((stack, index) -> {
+			return GrassColor.get(0.5D, 1.0D);
+		}, TutorialModBlocks.TOMATO_PLANT.get());
+	}
 }

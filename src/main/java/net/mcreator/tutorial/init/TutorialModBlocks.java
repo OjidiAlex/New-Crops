@@ -16,22 +16,30 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.tutorial.block.TomatoPlantBlock;
+import net.mcreator.tutorial.block.CropSupportBlock;
 import net.mcreator.tutorial.TutorialMod;
 
 public class TutorialModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MODID);
 	public static final RegistryObject<Block> TOMATO_PLANT = REGISTRY.register("tomato_plant", () -> new TomatoPlantBlock());
+	public static final RegistryObject<Block> CROP_SUPPORT = REGISTRY.register("crop_support", () -> new CropSupportBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
 			TomatoPlantBlock.registerRenderLayer();
+			CropSupportBlock.registerRenderLayer();
 		}
 
 		@SubscribeEvent
 		public static void blockColorLoad(ColorHandlerEvent.Block event) {
 			TomatoPlantBlock.blockColorLoad(event);
+		}
+
+		@SubscribeEvent
+		public static void itemColorLoad(ColorHandlerEvent.Item event) {
+			TomatoPlantBlock.itemColorLoad(event);
 		}
 	}
 }

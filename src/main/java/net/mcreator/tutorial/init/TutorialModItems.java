@@ -22,6 +22,7 @@ public class TutorialModItems {
 	public static final RegistryObject<Item> TOMATO_PLANT = block(TutorialModBlocks.TOMATO_PLANT, TutorialModTabs.TAB_NEW_CRODS);
 	public static final RegistryObject<Item> TOMATO = REGISTRY.register("tomato", () -> new TomatoItem());
 	public static final RegistryObject<Item> TOMATO_SEED = REGISTRY.register("tomato_seed", () -> new TomatoSeedItem());
+	public static final RegistryObject<Item> CROP_SUPPORT = block(TutorialModBlocks.CROP_SUPPORT, TutorialModTabs.TAB_NEW_CRODS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

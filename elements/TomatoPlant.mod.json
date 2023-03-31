@@ -9,9 +9,9 @@
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "Grass",
-    "isItemTinted": false,
+    "isItemTinted": true,
     "plantType": "normal",
-    "staticPlantGenerationType": "Flower",
+    "staticPlantGenerationType": "Grass",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 100,
     "growapableSpawnType": "Plains",
@@ -104,6 +104,9 @@
         "value": "forest_hills"
       }
     ],
+    "generateCondition": {
+      "name": "TomatoGeneration"
+    },
     "patchSize": 64,
     "generateAtAnyHeight": false
   }

@@ -54,6 +54,90 @@
           "src/main/resources/assets/tutorial/models/item/tomato_seed.json"
         ]
       }
+    },
+    {
+      "name": "TomatoGeneration",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_generation",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/tutorial/procedures/TomatoGenerationProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "CropSupport",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tutorial/blockstates/crop_support.json",
+          "src/main/resources/assets/tutorial/models/item/crop_support.json",
+          "src/main/java/net/mcreator/tutorial/block/CropSupportBlock.java",
+          "src/main/resources/assets/tutorial/models/block/crop_support.json"
+        ]
+      }
+    },
+    {
+      "name": "TomatoComp",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_comp",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CropSupportRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tutorial/recipes/crop_support.json"
+        ]
+      }
+    },
+    {
+      "name": "CropSupportCondition",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tutorial/procedures/CropSupportConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -61,6 +145,7 @@
   "language_map": {
     "en_us": {
       "item.tutorial.tomato": "Tomato",
+      "block.tutorial.crop_support": "Crop support",
       "itemGroup.tabnew_crods": "New Crods",
       "item.tutorial.tomato_seed": "Tomato seed",
       "block.tutorial.tomato_plant": "Tomato plant"
