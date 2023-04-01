@@ -2,18 +2,18 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "crop_support",
+    "texture": "tomato_crop_base1",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "crop_support:default",
-    "rotationMode": 3,
-    "enablePitch": true,
+    "customModelName": "crop_support_fill:default",
+    "rotationMode": 4,
+    "enablePitch": false,
     "emissiveRendering": false,
-    "displayFluidOverlay": true,
+    "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
@@ -24,45 +24,27 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 7.0,
-        "my": -2.0,
-        "mz": 4.0,
-        "Mx": 9.0,
-        "My": 28.0,
-        "Mz": 6.0,
-        "subtract": false
-      },
-      {
-        "mx": 3.0,
-        "my": 8.0,
-        "mz": 6.0,
-        "Mx": 13.0,
-        "My": 10.0,
-        "Mz": 7.0,
-        "subtract": false
-      },
-      {
-        "mx": 3.0,
-        "my": 20.0,
-        "mz": 6.0,
-        "Mx": 13.0,
-        "My": 22.0,
-        "Mz": 7.0,
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Crop support",
+    "name": "Tomato crop age",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 2.0,
+    "hardness": 0.0,
+    "resistance": 0.0,
     "hasGravity": false,
-    "isWaterloggable": true,
+    "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:NewCrods"
+      "value": "No creative tab entry"
     },
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:TomatoSeed"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -87,17 +69,17 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 3,
-    "fireSpreadSpeed": 3,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "DESTROY",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "BAMBOO"
+      "value": "CROP"
     },
     "breakSound": {
       "value": ""
@@ -116,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -135,12 +117,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onNeighbourBlockChanges": {
-      "name": "CropSupportCondition"
-    },
-    "onBlockPlayedBy": {
-      "name": "CropSupportCondition"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],

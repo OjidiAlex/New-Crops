@@ -1,8 +1,0 @@
-{
-  "parent": "tutorial:custom/crop_support",
-  "textures": {
-    "all": "tutorial:blocks/crop_support",
-    "particle": "tutorial:blocks/crop_support",
-    "0": "tutorial:blocks/crop_support"
-  }
-}

@@ -1,0 +1,233 @@
+{
+  "mod_elements": [
+    {
+      "name": "Tomato",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/new_crops/models/item/tomato.json",
+          "src/main/java/net/mcreator/new_crops/item/TomatoItem.java"
+        ]
+      }
+    },
+    {
+      "name": "NewCrods",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_crods",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "TomatoPlant",
+      "type": "plant",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_plant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/new_crops/block/TomatoPlantBlock.java",
+          "src/main/resources/assets/new_crops/blockstates/tomato_plant.json",
+          "src/main/resources/assets/new_crops/models/block/tomato_plant.json",
+          "src/main/resources/assets/new_crops/models/item/tomato_plant.json",
+          "src/main/java/net/mcreator/new_crops/world/features/plants/TomatoPlantFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "TomatoSeed",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_seed",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/new_crops/models/item/tomato_seed.json",
+          "src/main/java/net/mcreator/new_crops/item/TomatoSeedItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TomatoGeneration",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_generation",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/new_crops/procedures/TomatoGenerationProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "CropSupport",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/new_crops/block/CropSupportBlock.java",
+          "src/main/resources/assets/new_crops/models/item/crop_support.json",
+          "src/main/resources/assets/new_crops/blockstates/crop_support.json",
+          "src/main/resources/assets/new_crops/models/block/crop_support.json"
+        ]
+      }
+    },
+    {
+      "name": "TomatoComp",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_comp",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CropSupportRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/new_crops/recipes/crop_support.json"
+        ]
+      }
+    },
+    {
+      "name": "CropSupportCondition",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/new_crops/procedures/CropSupportConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TomatoSeedPlace",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_seed_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/new_crops/procedures/TomatoSeedPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TomatoCropAge1",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_crop_age_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/new_crops/blockstates/tomato_crop_age_1.json",
+          "src/main/java/net/mcreator/new_crops/block/TomatoCropAge1Block.java",
+          "src/main/resources/assets/new_crops/models/item/tomato_crop_age_1.json",
+          "src/main/resources/assets/new_crops/models/block/tomato_crop_age_1.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.tutorial.tomato": "Tomato",
+      "block.tutorial.crop_support": "Crop support",
+      "item.new_crops.tomato": "Tomato",
+      "itemGroup.tabnew_crods": "New Crods",
+      "item.tutorial.tomato_seed": "Tomato seed",
+      "item.new_crops.tomato_seed": "Tomato seed",
+      "block.new_crops.crop_support": "Crop support",
+      "block.new_crops.tomato_plant": "Tomato plant",
+      "block.new_crops.tomato_crop_age_1": "Tomato crop age",
+      "block.tutorial.tomato_plant": "Tomato plant"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "new_crops",
+    "modName": "New Crops",
+    "version": "1.0.0",
+    "author": "Angelo, Ojidialex, Millenniar Studios, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.new_crops",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

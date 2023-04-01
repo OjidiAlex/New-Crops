@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "new_crops:block/tomato_crop_age_1"
+    },
+    "facing=east": {
+      "model": "new_crops:block/tomato_crop_age_1",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "new_crops:block/tomato_crop_age_1",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "new_crops:block/tomato_crop_age_1",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "new_crops:block/tomato_crop_age_1",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "new_crops:block/tomato_crop_age_1",
+      "x": 90
+    }
+  }
+}

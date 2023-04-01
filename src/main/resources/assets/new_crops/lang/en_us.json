@@ -1,0 +1,12 @@
+{
+  "item.tutorial.tomato": "Tomato",
+  "block.tutorial.crop_support": "Crop support",
+  "item.new_crops.tomato": "Tomato",
+  "itemGroup.tabnew_crods": "New Crods",
+  "item.tutorial.tomato_seed": "Tomato seed",
+  "item.new_crops.tomato_seed": "Tomato seed",
+  "block.new_crops.crop_support": "Crop support",
+  "block.new_crops.tomato_plant": "Tomato plant",
+  "block.new_crops.tomato_crop_age_1": "Tomato crop age",
+  "block.tutorial.tomato_plant": "Tomato plant"
+}

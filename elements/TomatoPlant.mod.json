@@ -13,7 +13,7 @@
     "plantType": "normal",
     "staticPlantGenerationType": "Grass",
     "suspiciousStewEffect": "SPEED",
-    "suspiciousStewDuration": 100,
+    "suspiciousStewDuration": 0,
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",

@@ -1,0 +1,7 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "new_crops:blocks/tomatoplant",
+    "particle": "new_crops:blocks/tomatoplant"
+  }
+}

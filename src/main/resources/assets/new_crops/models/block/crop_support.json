@@ -1,0 +1,8 @@
+{
+  "parent": "new_crops:custom/crop_support",
+  "textures": {
+    "all": "new_crops:blocks/crop_support",
+    "particle": "new_crops:blocks/crop_support",
+    "0": "new_crops:blocks/crop_support"
+  }
+}

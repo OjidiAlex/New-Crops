@@ -3,14 +3,14 @@ loaderVersion="[40,)"
 license="Academic Free License v3.0"
 
 [[mods]]
-modId="tutorial"
+modId="new_crops"
 version="1.0.0"
-displayName="Tutorial"
+displayName="New Crops"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="Angelo, MCreator"
+authors="Angelo, Ojidialex, Millenniar Studios, MCreator"
 
-[[dependencies.tutorial]]
+[[dependencies.new_crops]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18.2]"
