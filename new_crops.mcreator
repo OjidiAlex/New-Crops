@@ -189,6 +189,142 @@
           "src/main/resources/assets/new_crops/models/block/tomato_crop_age_1.json"
         ]
       }
+    },
+    {
+      "name": "CropSupportBasePlace",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support_base_place",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/new_crops/procedures/CropSupportBasePlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CropSupportTop",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support_top",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/new_crops/models/block/crop_support_top.json",
+          "src/main/java/net/mcreator/new_crops/block/CropSupportTopBlock.java",
+          "src/main/resources/assets/new_crops/models/item/crop_support_top.json",
+          "src/main/resources/assets/new_crops/blockstates/crop_support_top.json"
+        ]
+      }
+    },
+    {
+      "name": "CropSupportTopTag",
+      "type": "tag",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support_top_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/blocks/crop_support_top.json"
+        ]
+      }
+    },
+    {
+      "name": "CropSupportBaseTag",
+      "type": "tag",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support_base_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/blocks/crop_support_base.json"
+        ]
+      }
+    },
+    {
+      "name": "CropSupportTopCondition",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support_top_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/new_crops/procedures/CropSupportTopConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CropSupportAdded",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/new_crops/procedures/CropSupportAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -204,6 +340,7 @@
       "block.new_crops.crop_support": "Crop support",
       "block.new_crops.tomato_plant": "Tomato plant",
       "block.new_crops.tomato_crop_age_1": "Tomato crop age",
+      "block.new_crops.crop_support_top": "Crop support top",
       "block.tutorial.tomato_plant": "Tomato plant"
     }
   },

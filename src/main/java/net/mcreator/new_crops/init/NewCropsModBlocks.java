@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.new_crops.block.TomatoPlantBlock;
 import net.mcreator.new_crops.block.TomatoCropAge1Block;
+import net.mcreator.new_crops.block.CropSupportTopBlock;
 import net.mcreator.new_crops.block.CropSupportBlock;
 import net.mcreator.new_crops.NewCropsMod;
 
@@ -25,6 +26,7 @@ public class NewCropsModBlocks {
 	public static final RegistryObject<Block> TOMATO_PLANT = REGISTRY.register("tomato_plant", () -> new TomatoPlantBlock());
 	public static final RegistryObject<Block> CROP_SUPPORT = REGISTRY.register("crop_support", () -> new CropSupportBlock());
 	public static final RegistryObject<Block> TOMATO_CROP_AGE_1 = REGISTRY.register("tomato_crop_age_1", () -> new TomatoCropAge1Block());
+	public static final RegistryObject<Block> CROP_SUPPORT_TOP = REGISTRY.register("crop_support_top", () -> new CropSupportTopBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -33,6 +35,7 @@ public class NewCropsModBlocks {
 			TomatoPlantBlock.registerRenderLayer();
 			CropSupportBlock.registerRenderLayer();
 			TomatoCropAge1Block.registerRenderLayer();
+			CropSupportTopBlock.registerRenderLayer();
 		}
 
 		@SubscribeEvent

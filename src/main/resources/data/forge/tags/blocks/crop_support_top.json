@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "new_crops:crop_support",
     "new_crops:crop_support_top"
   ]
 }

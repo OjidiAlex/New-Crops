@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "crop_support_base:default",
+    "customModelName": "crop_support:default",
     "rotationMode": 3,
     "enablePitch": true,
     "emissiveRendering": false,
@@ -25,35 +25,35 @@
     "boundingBoxes": [
       {
         "mx": 7.0,
-        "my": -1.0,
+        "my": 0.0,
         "mz": 4.0,
         "Mx": 9.0,
-        "My": 16.0,
+        "My": 12.0,
         "Mz": 6.0,
         "subtract": false
       },
       {
         "mx": 3.0,
-        "my": 8.0,
+        "my": 4.0,
         "mz": 6.0,
         "Mx": 13.0,
-        "My": 10.0,
+        "My": 6.0,
         "Mz": 7.0,
         "subtract": false
       }
     ],
-    "name": "Crop support",
+    "name": "Crop support top",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:NewCrods"
+      "value": "No creative tab entry"
     },
     "destroyTool": "axe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:CropSupport"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -63,7 +63,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "PLANTS"
+      "value": "WOOD"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -74,7 +74,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:CropSupport"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -108,9 +108,6 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 0,
-    "placingCondition": {
-      "name": "CropSupportBasePlace"
-    },
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -130,10 +127,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onNeighbourBlockChanges": {
-      "name": "CropSupportCondition"
-    },
-    "onBlockPlayedBy": {
-      "name": "CropSupportAdded"
+      "name": "CropSupportTopCondition"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
