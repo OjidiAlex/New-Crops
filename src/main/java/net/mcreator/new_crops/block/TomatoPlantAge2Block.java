@@ -46,16 +46,16 @@ import net.mcreator.new_crops.procedures.CropSupportConditionProcedure;
 import net.mcreator.new_crops.procedures.CropSupportBasePlaceProcedure;
 import net.mcreator.new_crops.init.NewCropsModItems;
 import net.mcreator.new_crops.init.NewCropsModBlocks;
-import net.mcreator.new_crops.block.entity.TomatoPlantAge1BlockEntity;
+import net.mcreator.new_crops.block.entity.TomatoPlantAge2BlockEntity;
 
 import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
-public class TomatoPlantAge1Block extends Block implements EntityBlock {
+public class TomatoPlantAge2Block extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-	public TomatoPlantAge1Block() {
+	public TomatoPlantAge2Block() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.CROP).strength(0f, 1f).noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
@@ -185,7 +185,7 @@ public class TomatoPlantAge1Block extends Block implements EntityBlock {
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new TomatoPlantAge1BlockEntity(pos, state);
+		return new TomatoPlantAge2BlockEntity(pos, state);
 	}
 
 	@Override
@@ -197,6 +197,6 @@ public class TomatoPlantAge1Block extends Block implements EntityBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(NewCropsModBlocks.TOMATO_PLANT_AGE_1.get(), renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(NewCropsModBlocks.TOMATO_PLANT_AGE_2.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

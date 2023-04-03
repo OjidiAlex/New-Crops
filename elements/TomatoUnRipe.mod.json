@@ -8,7 +8,7 @@
     "name": "Un ripe tomato",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:NewCrods"
     },
     "stackSize": 64,
     "enchantability": 0,

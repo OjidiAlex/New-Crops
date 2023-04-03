@@ -12,15 +12,10 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
@@ -28,7 +23,6 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -46,18 +40,15 @@ import net.mcreator.new_crops.procedures.CropSupportConditionProcedure;
 import net.mcreator.new_crops.procedures.CropSupportBasePlaceProcedure;
 import net.mcreator.new_crops.init.NewCropsModItems;
 import net.mcreator.new_crops.init.NewCropsModBlocks;
-import net.mcreator.new_crops.block.entity.TomatoPlantAge1BlockEntity;
+import net.mcreator.new_crops.block.entity.TomatoPlantAge3BlockEntity;
 
 import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
-public class TomatoPlantAge1Block extends Block implements EntityBlock {
-	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-
-	public TomatoPlantAge1Block() {
+public class TomatoPlantAge3Block extends Block implements EntityBlock {
+	public TomatoPlantAge3Block() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.CROP).strength(0f, 1f).noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
 	@Override
@@ -77,32 +68,7 @@ public class TomatoPlantAge1Block extends Block implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(7, -1, 10, 9, 16, 12), box(3, 8, 9, 13, 10, 10));
-			case NORTH -> Shapes.or(box(7, -1, 4, 9, 16, 6), box(3, 8, 6, 13, 10, 7));
-			case EAST -> Shapes.or(box(10, -1, 7, 12, 16, 9), box(9, 8, 3, 10, 10, 13));
-			case WEST -> Shapes.or(box(4, -1, 7, 6, 16, 9), box(6, 8, 3, 7, 10, 13));
-		};
-	}
-
-	@Override
-	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING);
-	}
-
-	@Override
-	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
-			return this.defaultBlockState().setValue(FACING, Direction.NORTH);
-		return this.defaultBlockState().setValue(FACING, context.getClickedFace());
-	}
-
-	public BlockState rotate(BlockState state, Rotation rot) {
-		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
-	}
-
-	public BlockState mirror(BlockState state, Mirror mirrorIn) {
-		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
+		return Shapes.or(box(7, -1, 4, 9, 16, 6), box(3, 8, 6, 13, 10, 7));
 	}
 
 	@Override
@@ -185,7 +151,7 @@ public class TomatoPlantAge1Block extends Block implements EntityBlock {
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new TomatoPlantAge1BlockEntity(pos, state);
+		return new TomatoPlantAge3BlockEntity(pos, state);
 	}
 
 	@Override
@@ -197,6 +163,6 @@ public class TomatoPlantAge1Block extends Block implements EntityBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(NewCropsModBlocks.TOMATO_PLANT_AGE_1.get(), renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(NewCropsModBlocks.TOMATO_PLANT_AGE_3.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

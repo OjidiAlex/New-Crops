@@ -7,6 +7,18 @@
     "blocks": [
       {
         "value": "CUSTOM:CropSupport"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantAge1"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantAge2"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantAge3"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantAge4"
       }
     ],
     "functions": [],

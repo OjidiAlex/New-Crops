@@ -3,7 +3,7 @@
     {
       "name": "Tomato",
       "type": "item",
-      "sortid": 2,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tomato",
@@ -17,7 +17,7 @@
     {
       "name": "NewCrods",
       "type": "tab",
-      "sortid": 17,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "new_crods",
@@ -45,7 +45,7 @@
     {
       "name": "TomatoSeed",
       "type": "item",
-      "sortid": 3,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tomato_seed",
@@ -59,7 +59,7 @@
     {
       "name": "TomatoGeneration",
       "type": "procedure",
-      "sortid": 6,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tomato_generation",
@@ -74,7 +74,7 @@
     {
       "name": "CropSupport",
       "type": "block",
-      "sortid": 4,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crop_support",
@@ -90,7 +90,7 @@
     {
       "name": "TomatoComp",
       "type": "itemextension",
-      "sortid": 18,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tomato_comp",
@@ -101,7 +101,7 @@
     {
       "name": "CropSupportRecipe",
       "type": "recipe",
-      "sortid": 19,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crop_support_recipe",
@@ -114,7 +114,7 @@
     {
       "name": "CropSupportCondition",
       "type": "procedure",
-      "sortid": 5,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crop_support_condition",
@@ -145,7 +145,7 @@
     {
       "name": "TomatoSeedPlace",
       "type": "procedure",
-      "sortid": 8,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tomato_seed_place",
@@ -180,7 +180,7 @@
     {
       "name": "CropSupportBasePlace",
       "type": "procedure",
-      "sortid": 10,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crop_support_base_place",
@@ -212,7 +212,7 @@
     {
       "name": "CropSupportTop",
       "type": "block",
-      "sortid": 11,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crop_support_top",
@@ -228,7 +228,7 @@
     {
       "name": "CropSupportTopTag",
       "type": "tag",
-      "sortid": 12,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crop_support_top_tag",
@@ -241,7 +241,7 @@
     {
       "name": "CropSupportBaseTag",
       "type": "tag",
-      "sortid": 13,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crop_support_base_tag",
@@ -254,7 +254,7 @@
     {
       "name": "CropSupportTopCondition",
       "type": "procedure",
-      "sortid": 14,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crop_support_top_condition",
@@ -285,7 +285,7 @@
     {
       "name": "CropSupportAdded",
       "type": "procedure",
-      "sortid": 15,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crop_support_added",
@@ -316,7 +316,7 @@
     {
       "name": "FarmlandTag",
       "type": "tag",
-      "sortid": 16,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "farmland_tag",
@@ -329,6 +329,7 @@
     {
       "name": "TomatoPlantLoot",
       "type": "loottable",
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tomato_plant_loot",
@@ -341,7 +342,7 @@
     {
       "name": "TomatoRipe",
       "type": "item",
-      "sortid": 20,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tomato_ripe",
@@ -355,7 +356,7 @@
     {
       "name": "TomatoUnRipe",
       "type": "item",
-      "sortid": 21,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tomato_un_ripe",
@@ -369,7 +370,7 @@
     {
       "name": "TomatoTag",
       "type": "tag",
-      "sortid": 22,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tomato_tag",
@@ -382,7 +383,7 @@
     {
       "name": "TomatoSeedRecipe",
       "type": "recipe",
-      "sortid": 23,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tomato_seed_recipe",
@@ -391,6 +392,24 @@
           "src/main/resources/data/new_crops/recipes/tomato_seed.json"
         ]
       }
+    },
+    {
+      "name": "TomatoPlantAge2",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_plant_age_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/new_crops/block/TomatoPlantAge2Block.java",
+          "src/main/resources/assets/new_crops/models/block/tomato_plant_age_2.json",
+          "src/main/resources/assets/new_crops/blockstates/tomato_plant_age_2.json",
+          "src/main/resources/assets/new_crops/models/item/tomato_plant_age_2.json",
+          "src/main/java/net/mcreator/new_crops/block/entity/TomatoPlantAge2BlockEntity.java"
+        ]
+      },
+      "path": "~/TomatoCrop"
     },
     {
       "name": "TomatoPlantAge1",
@@ -403,10 +422,144 @@
         "files": [
           "src/main/resources/assets/new_crops/models/item/tomato_plant_age_1.json",
           "src/main/java/net/mcreator/new_crops/block/TomatoPlantAge1Block.java",
+          "src/main/java/net/mcreator/new_crops/block/entity/TomatoPlantAge1BlockEntity.java",
           "src/main/resources/assets/new_crops/blockstates/tomato_plant_age_1.json",
           "src/main/resources/assets/new_crops/models/block/tomato_plant_age_1.json"
         ]
-      }
+      },
+      "path": "~/TomatoCrop"
+    },
+    {
+      "name": "CropSupportDestroy",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_support_destroy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/new_crops/procedures/CropSupportDestroyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TomatoCrop"
+    },
+    {
+      "name": "TomatoPlantGrow",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_plant_grow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/new_crops/procedures/TomatoPlantGrowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TomatoCrop"
+    },
+    {
+      "name": "TomatoPlantPlace",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_plant_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/new_crops/procedures/TomatoPlantPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TomatoCrop"
+    },
+    {
+      "name": "TomatoPlantAge3",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_plant_age_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/new_crops/blockstates/tomato_plant_age_3.json",
+          "src/main/java/net/mcreator/new_crops/block/entity/TomatoPlantAge3BlockEntity.java",
+          "src/main/java/net/mcreator/new_crops/block/TomatoPlantAge3Block.java",
+          "src/main/resources/assets/new_crops/models/item/tomato_plant_age_3.json",
+          "src/main/resources/assets/new_crops/models/block/tomato_plant_age_3.json"
+        ]
+      },
+      "path": "~/TomatoCrop"
+    },
+    {
+      "name": "TomatoPlantAge4",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_plant_age_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/new_crops/models/item/tomato_plant_age_4.json",
+          "src/main/resources/assets/new_crops/models/block/tomato_plant_age_4.json",
+          "src/main/java/net/mcreator/new_crops/block/entity/TomatoPlantAge4BlockEntity.java",
+          "src/main/java/net/mcreator/new_crops/block/TomatoPlantAge4Block.java",
+          "src/main/resources/assets/new_crops/blockstates/tomato_plant_age_4.json"
+        ]
+      },
+      "path": "~/TomatoCrop"
     }
   ],
   "variable_elements": [],
@@ -415,6 +568,9 @@
     "en_us": {
       "item.tutorial.tomato": "Tomato",
       "block.tutorial.crop_support": "Crop support",
+      "block.new_crops.tomato_plant_age_4": "Tomato plant age 4",
+      "block.new_crops.tomato_plant_age_3": "Tomato plant age 3",
+      "block.new_crops.tomato_plant_age_2": "Tomato plant age 2",
       "block.new_crops.tomato_plant_age_1": "Tomato plant age 1",
       "item.new_crops.tomato_seed": "Tomato seed",
       "block.new_crops.crop_support": "Crop support",
@@ -432,7 +588,7 @@
     "name": "~",
     "children": [
       {
-        "name": "TomatoPlant",
+        "name": "TomatoCrop",
         "children": []
       }
     ]

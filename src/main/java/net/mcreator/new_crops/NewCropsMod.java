@@ -30,6 +30,7 @@ import net.mcreator.new_crops.init.NewCropsModTabs;
 import net.mcreator.new_crops.init.NewCropsModItems;
 import net.mcreator.new_crops.init.NewCropsModFeatures;
 import net.mcreator.new_crops.init.NewCropsModBlocks;
+import net.mcreator.new_crops.init.NewCropsModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -49,6 +50,7 @@ public class NewCropsMod {
 		NewCropsModBlocks.REGISTRY.register(bus);
 		NewCropsModItems.REGISTRY.register(bus);
 
+		NewCropsModBlockEntities.REGISTRY.register(bus);
 		NewCropsModFeatures.REGISTRY.register(bus);
 
 	}

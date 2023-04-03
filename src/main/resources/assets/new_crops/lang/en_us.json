@@ -1,6 +1,9 @@
 {
   "item.tutorial.tomato": "Tomato",
   "block.tutorial.crop_support": "Crop support",
+  "block.new_crops.tomato_plant_age_4": "Tomato plant age 4",
+  "block.new_crops.tomato_plant_age_3": "Tomato plant age 3",
+  "block.new_crops.tomato_plant_age_2": "Tomato plant age 2",
   "block.new_crops.tomato_plant_age_1": "Tomato plant age 1",
   "item.new_crops.tomato_seed": "Tomato seed",
   "block.new_crops.crop_support": "Crop support",

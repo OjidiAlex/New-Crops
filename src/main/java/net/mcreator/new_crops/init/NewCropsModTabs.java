@@ -17,7 +17,7 @@ public class NewCropsModTabs {
 		TAB_NEW_CRODS = new CreativeModeTab("tabnew_crods") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(NewCropsModItems.TOMATO.get());
+				return new ItemStack(NewCropsModItems.TOMATO_RIPE.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)
