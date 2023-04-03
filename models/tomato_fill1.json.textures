@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "crop_support",
+        "1": "tomato_crop_base_fill1"
+      },
+      "name": "default"
+    }
+  }
+}

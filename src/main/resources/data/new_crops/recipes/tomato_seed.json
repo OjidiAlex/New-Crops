@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "tomatoes"
+    }
+  ],
+  "result": {
+    "item": "new_crops:tomato_seed",
+    "count": 1
+  }
+}

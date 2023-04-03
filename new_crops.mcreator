@@ -17,6 +17,7 @@
     {
       "name": "NewCrods",
       "type": "tab",
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "new_crods",
@@ -89,6 +90,7 @@
     {
       "name": "TomatoComp",
       "type": "itemextension",
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tomato_comp",
@@ -99,6 +101,7 @@
     {
       "name": "CropSupportRecipe",
       "type": "recipe",
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crop_support_recipe",
@@ -171,22 +174,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "TomatoCropAge1",
-      "type": "block",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tomato_crop_age_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/new_crops/blockstates/tomato_crop_age_1.json",
-          "src/main/java/net/mcreator/new_crops/block/TomatoCropAge1Block.java",
-          "src/main/resources/assets/new_crops/models/item/tomato_crop_age_1.json",
-          "src/main/resources/assets/new_crops/models/block/tomato_crop_age_1.json"
         ]
       }
     },
@@ -325,6 +312,101 @@
           }
         ]
       }
+    },
+    {
+      "name": "FarmlandTag",
+      "type": "tag",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmland_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/blocks/farmland.json"
+        ]
+      }
+    },
+    {
+      "name": "TomatoPlantLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_plant_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/new_crops/loot_tables/blocks/tomato_plant.json"
+        ]
+      }
+    },
+    {
+      "name": "TomatoRipe",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_ripe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/new_crops/item/TomatoRipeItem.java",
+          "src/main/resources/assets/new_crops/models/item/tomato_ripe.json"
+        ]
+      }
+    },
+    {
+      "name": "TomatoUnRipe",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_un_ripe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/new_crops/models/item/tomato_un_ripe.json",
+          "src/main/java/net/mcreator/new_crops/item/TomatoUnRipeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TomatoTag",
+      "type": "tag",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/tomatoes.json"
+        ]
+      }
+    },
+    {
+      "name": "TomatoSeedRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_seed_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/new_crops/recipes/tomato_seed.json"
+        ]
+      }
+    },
+    {
+      "name": "TomatoPlantAge1",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomato_plant_age_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/new_crops/models/item/tomato_plant_age_1.json",
+          "src/main/java/net/mcreator/new_crops/block/TomatoPlantAge1Block.java",
+          "src/main/resources/assets/new_crops/blockstates/tomato_plant_age_1.json",
+          "src/main/resources/assets/new_crops/models/block/tomato_plant_age_1.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -333,20 +415,27 @@
     "en_us": {
       "item.tutorial.tomato": "Tomato",
       "block.tutorial.crop_support": "Crop support",
+      "block.new_crops.tomato_plant_age_1": "Tomato plant age 1",
+      "item.new_crops.tomato_seed": "Tomato seed",
+      "block.new_crops.crop_support": "Crop support",
+      "item.new_crops.tomato_un_ripe": "Un ripe tomato",
+      "block.tutorial.tomato_plant": "Tomato plant",
       "item.new_crops.tomato": "Tomato",
       "itemGroup.tabnew_crods": "New Crods",
       "item.tutorial.tomato_seed": "Tomato seed",
-      "item.new_crops.tomato_seed": "Tomato seed",
-      "block.new_crops.crop_support": "Crop support",
+      "item.new_crops.tomato_ripe": "Ripe tomato",
       "block.new_crops.tomato_plant": "Tomato plant",
-      "block.new_crops.tomato_crop_age_1": "Tomato crop age",
-      "block.new_crops.crop_support_top": "Crop support top",
-      "block.tutorial.tomato_plant": "Tomato plant"
+      "block.new_crops.crop_support_top": "Crop support top"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "TomatoPlant",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "new_crops",

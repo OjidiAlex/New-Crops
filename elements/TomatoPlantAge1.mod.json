@@ -9,8 +9,8 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "crop_support_fill:default",
-    "rotationMode": 4,
+    "customModelName": "tomato_age1:default",
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -24,19 +24,28 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
+        "mx": 7.0,
+        "my": -1.0,
+        "mz": 4.0,
+        "Mx": 9.0,
         "My": 16.0,
-        "Mz": 16.0,
+        "Mz": 6.0,
+        "subtract": false
+      },
+      {
+        "mx": 3.0,
+        "my": 8.0,
+        "mz": 6.0,
+        "Mx": 13.0,
+        "My": 10.0,
+        "Mz": 7.0,
         "subtract": false
       }
     ],
-    "name": "Tomato crop age",
+    "name": "Tomato plant age 1",
     "specialInfo": [],
     "hardness": 0.0,
-    "resistance": 0.0,
+    "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -54,10 +63,10 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "TALL_PLANTS"
+      "value": "PLANTS"
     },
     "tickRate": 0,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -65,18 +74,18 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:TomatoSeed"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
-    "fireSpreadSpeed": 0,
+    "flammability": 3,
+    "fireSpreadSpeed": 3,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "DESTROY",
-    "isNotColidable": true,
+    "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "CROP"
@@ -99,6 +108,9 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
+    "placingCondition": {
+      "name": "CropSupportBasePlace"
+    },
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -117,6 +129,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "CropSupportCondition"
+    },
+    "onBlockPlayedBy": {
+      "name": "CropSupportAdded"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],

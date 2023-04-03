@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "tomato",
+    "texture": "ripe_tomato",
     "customModelName": "Normal",
-    "name": "Tomato",
+    "name": "Un ripe tomato",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:NewCrods"
+      "value": "MISC"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -30,8 +30,8 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "isFood": true,
-    "nutritionalValue": 2,
-    "saturation": 0.2,
+    "nutritionalValue": 1,
+    "saturation": 0.1,
     "eatResultItem": {
       "value": ""
     },

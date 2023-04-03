@@ -59,9 +59,9 @@
     "fallSound": {
       "value": ""
     },
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "customDrop": {
-      "value": "CUSTOM:Tomato"
+      "value": ""
     },
     "dropAmount": 1,
     "forceTicking": false,

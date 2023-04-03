@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "new_crops:tomato",
+    "new_crops:tomato_ripe",
+    "new_crops:tomato_un_ripe"
+  ]
+}

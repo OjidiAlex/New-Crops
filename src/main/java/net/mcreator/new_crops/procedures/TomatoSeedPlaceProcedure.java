@@ -14,7 +14,7 @@ public class TomatoSeedPlaceProcedure {
 		if (entity == null)
 			return;
 		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == NewCropsModBlocks.CROP_SUPPORT.get()) {
-			world.setBlock(new BlockPos(x, y, z), NewCropsModBlocks.TOMATO_CROP_AGE_1.get().defaultBlockState(), 3);
+			world.setBlock(new BlockPos(x, y, z), NewCropsModBlocks.TOMATO_PLANT_AGE_1.get().defaultBlockState(), 3);
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(NewCropsModItems.TOMATO_SEED.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());

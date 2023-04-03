@@ -1,13 +1,15 @@
 {
   "item.tutorial.tomato": "Tomato",
   "block.tutorial.crop_support": "Crop support",
+  "block.new_crops.tomato_plant_age_1": "Tomato plant age 1",
+  "item.new_crops.tomato_seed": "Tomato seed",
+  "block.new_crops.crop_support": "Crop support",
+  "item.new_crops.tomato_un_ripe": "Un ripe tomato",
+  "block.tutorial.tomato_plant": "Tomato plant",
   "item.new_crops.tomato": "Tomato",
   "itemGroup.tabnew_crods": "New Crods",
   "item.tutorial.tomato_seed": "Tomato seed",
-  "item.new_crops.tomato_seed": "Tomato seed",
-  "block.new_crops.crop_support": "Crop support",
+  "item.new_crops.tomato_ripe": "Ripe tomato",
   "block.new_crops.tomato_plant": "Tomato plant",
-  "block.new_crops.tomato_crop_age_1": "Tomato crop age",
-  "block.new_crops.crop_support_top": "Crop support top",
-  "block.tutorial.tomato_plant": "Tomato plant"
+  "block.new_crops.crop_support_top": "Crop support top"
 }

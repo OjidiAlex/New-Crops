@@ -7,9 +7,9 @@ import net.minecraft.world.food.FoodProperties;
 
 import net.mcreator.new_crops.init.NewCropsModTabs;
 
-public class TomatoItem extends Item {
-	public TomatoItem() {
-		super(new Item.Properties().tab(NewCropsModTabs.TAB_NEW_CRODS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.2f)
+public class TomatoRipeItem extends Item {
+	public TomatoRipeItem() {
+		super(new Item.Properties().tab(NewCropsModTabs.TAB_NEW_CRODS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.3f)
 
 				.build()));
 	}

@@ -1,5 +1,5 @@
 {
-  "parent": "new_crops:block/tomato_crop_age_1",
+  "parent": "new_crops:block/tomato_plant_age_1",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "tomato",
+    "texture": "unripe_tomato",
     "customModelName": "Normal",
-    "name": "Tomato",
+    "name": "Ripe tomato",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:NewCrods"
@@ -30,8 +30,8 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "isFood": true,
-    "nutritionalValue": 2,
-    "saturation": 0.2,
+    "nutritionalValue": 3,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },

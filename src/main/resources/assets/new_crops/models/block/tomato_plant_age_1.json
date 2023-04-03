@@ -1,0 +1,9 @@
+{
+  "parent": "new_crops:custom/tomato_age1",
+  "textures": {
+    "all": "new_crops:blocks/tomato_crop_base1",
+    "particle": "new_crops:blocks/tomato_crop_base1",
+    "0": "new_crops:blocks/crop_support",
+    "1": "new_crops:blocks/tomato_crop_base1"
+  }
+}
