@@ -11,9 +11,7 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -21,7 +19,6 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
-import net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelReader;
@@ -47,11 +44,10 @@ import java.util.Collections;
 
 public class CropSupportBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-	public static final EnumProperty<AttachFace> FACE = FaceAttachedHorizontalDirectionalBlock.FACE;
 
 	public CropSupportBlock() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.BAMBOO).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(FACE, AttachFace.WALL));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
 	@Override
@@ -77,39 +73,21 @@ public class CropSupportBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> switch (state.getValue(FACE)) {
-				case FLOOR -> Shapes.or(box(7, -1, 10, 9, 16, 12), box(3, 8, 9, 13, 10, 10));
-				case WALL -> Shapes.or(box(7, 4, -1, 9, 6, 16), box(3, 6, 8, 13, 7, 10));
-				case CEILING -> Shapes.or(box(7, 0, 10, 9, 17, 12), box(3, 6, 9, 13, 8, 10));
-			};
-			case NORTH -> switch (state.getValue(FACE)) {
-				case FLOOR -> Shapes.or(box(7, -1, 4, 9, 16, 6), box(3, 8, 6, 13, 10, 7));
-				case WALL -> Shapes.or(box(7, 4, 0, 9, 6, 17), box(3, 6, 6, 13, 7, 8));
-				case CEILING -> Shapes.or(box(7, 0, 4, 9, 17, 6), box(3, 6, 6, 13, 8, 7));
-			};
-			case EAST -> switch (state.getValue(FACE)) {
-				case FLOOR -> Shapes.or(box(10, -1, 7, 12, 16, 9), box(9, 8, 3, 10, 10, 13));
-				case WALL -> Shapes.or(box(-1, 4, 7, 16, 6, 9), box(8, 6, 3, 10, 7, 13));
-				case CEILING -> Shapes.or(box(10, 0, 7, 12, 17, 9), box(9, 6, 3, 10, 8, 13));
-			};
-			case WEST -> switch (state.getValue(FACE)) {
-				case FLOOR -> Shapes.or(box(4, -1, 7, 6, 16, 9), box(6, 8, 3, 7, 10, 13));
-				case WALL -> Shapes.or(box(0, 4, 7, 17, 6, 9), box(6, 6, 3, 8, 7, 13));
-				case CEILING -> Shapes.or(box(4, 0, 7, 6, 17, 9), box(6, 6, 3, 7, 8, 13));
-			};
+			default -> Shapes.or(box(7, -1, 10, 9, 16, 12), box(3, 8, 9, 13, 10, 10));
+			case NORTH -> Shapes.or(box(7, -1, 4, 9, 16, 6), box(3, 8, 6, 13, 10, 7));
+			case EAST -> Shapes.or(box(10, -1, 7, 12, 16, 9), box(9, 8, 3, 10, 10, 13));
+			case WEST -> Shapes.or(box(4, -1, 7, 6, 16, 9), box(6, 8, 3, 7, 10, 13));
 		};
 	}
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING, FACE);
+		builder.add(FACING);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
-			return this.defaultBlockState().setValue(FACE, context.getClickedFace().getOpposite() == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR).setValue(FACING, context.getHorizontalDirection());
-		return this.defaultBlockState().setValue(FACE, AttachFace.WALL).setValue(FACING, context.getClickedFace());
+		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

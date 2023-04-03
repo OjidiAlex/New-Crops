@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "new_crops:block/tomato_plant_fill_2"
+    },
+    "facing=east": {
+      "model": "new_crops:block/tomato_plant_fill_2",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "new_crops:block/tomato_plant_fill_2",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "new_crops:block/tomato_plant_fill_2",
+      "y": 270
+    }
+  }
+}

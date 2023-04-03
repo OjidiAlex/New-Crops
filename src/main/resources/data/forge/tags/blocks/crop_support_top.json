@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "new_crops:crop_support_top"
+    "new_crops:tomato_plant_top_fill_1",
+    "new_crops:crop_support_top",
+    "new_crops:tomato_plant_top_fill_2",
+    "new_crops:tomato_plant_top_fill_3",
+    "new_crops:tomato_plant_top_age_5",
+    "new_crops:tomato_plant_top_age_4"
   ]
 }

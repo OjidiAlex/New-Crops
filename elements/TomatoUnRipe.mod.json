@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "ripe_tomato",
     "customModelName": "Normal",
-    "name": "Un ripe tomato",
+    "name": "Unripe tomato",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:NewCrods"

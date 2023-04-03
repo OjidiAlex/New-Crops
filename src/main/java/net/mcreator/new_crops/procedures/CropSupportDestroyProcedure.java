@@ -1,13 +1,43 @@
 package net.mcreator.new_crops.procedures;
 
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.new_crops.init.NewCropsModBlocks;
 
+import java.util.Map;
+
 public class CropSupportDestroyProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		world.setBlock(new BlockPos(x, y, z), NewCropsModBlocks.CROP_SUPPORT.get().defaultBlockState(), 3);
-		world.setBlock(new BlockPos(x, y + 1, z), NewCropsModBlocks.CROP_SUPPORT_TOP.get().defaultBlockState(), 3);
+		{
+			BlockPos _bp = new BlockPos(x, y, z);
+			BlockState _bs = NewCropsModBlocks.CROP_SUPPORT.get().defaultBlockState();
+			BlockState _bso = world.getBlockState(_bp);
+			for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+				Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+				if (_property != null && _bs.getValue(_property) != null)
+					try {
+						_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+					} catch (Exception e) {
+					}
+			}
+			world.setBlock(_bp, _bs, 3);
+		}
+		{
+			BlockPos _bp = new BlockPos(x, y + 1, z);
+			BlockState _bs = NewCropsModBlocks.CROP_SUPPORT_TOP.get().defaultBlockState();
+			BlockState _bso = world.getBlockState(_bp);
+			for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+				Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+				if (_property != null && _bs.getValue(_property) != null)
+					try {
+						_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+					} catch (Exception e) {
+					}
+			}
+			world.setBlock(_bp, _bs, 3);
+		}
 	}
 }

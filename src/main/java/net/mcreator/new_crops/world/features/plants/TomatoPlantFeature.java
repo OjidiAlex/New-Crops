@@ -35,7 +35,7 @@ public class TomatoPlantFeature extends RandomPatchFeature {
 		FEATURE = new TomatoPlantFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("new_crops:tomato_plant", FEATURE,
 				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(NewCropsModBlocks.TOMATO_PLANT.get().defaultBlockState())), List.of(), 64));
-		PLACED_FEATURE = PlacementUtils.register("new_crops:tomato_plant", CONFIGURED_FEATURE, List.of(CountPlacement.of(3), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+		PLACED_FEATURE = PlacementUtils.register("new_crops:tomato_plant", CONFIGURED_FEATURE, List.of(CountPlacement.of(5), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

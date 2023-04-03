@@ -19,6 +19,18 @@
       },
       {
         "value": "CUSTOM:TomatoPlantAge4"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantAge5"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantFill1"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantFill2"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantFill3"
       }
     ],
     "functions": [],

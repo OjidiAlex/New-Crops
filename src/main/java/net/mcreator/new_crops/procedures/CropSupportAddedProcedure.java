@@ -15,14 +15,17 @@ public class CropSupportAddedProcedure {
 		world.setBlock(new BlockPos(x, y + 1, z), NewCropsModBlocks.CROP_SUPPORT_TOP.get().defaultBlockState(), 3);
 		{
 			Direction _dir = (new Object() {
-				public Direction getDirection(BlockState _bs) {
-					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (_prop instanceof DirectionProperty _dp)
-						return _bs.getValue(_dp);
-					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
+				public Direction getDirection(BlockPos pos) {
+					BlockState _bs = world.getBlockState(pos);
+					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+					if (property != null && _bs.getValue(property) instanceof Direction _dir)
+						return _dir;
+					property = _bs.getBlock().getStateDefinition().getProperty("axis");
+					if (property != null && _bs.getValue(property) instanceof Direction.Axis _axis)
+						return Direction.fromAxisAndDirection(_axis, Direction.AxisDirection.POSITIVE);
+					return Direction.NORTH;
 				}
-			}.getDirection((world.getBlockState(new BlockPos(x, y, z)))));
+			}.getDirection(new BlockPos(x, y, z)));
 			BlockPos _pos = new BlockPos(x, y + 1, z);
 			BlockState _bs = world.getBlockState(_pos);
 			Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");

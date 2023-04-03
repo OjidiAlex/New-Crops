@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "new_crops:block/tomato_plant_top_age_5"
+    },
+    "facing=east": {
+      "model": "new_crops:block/tomato_plant_top_age_5",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "new_crops:block/tomato_plant_top_age_5",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "new_crops:block/tomato_plant_top_age_5",
+      "y": 270
+    }
+  }
+}

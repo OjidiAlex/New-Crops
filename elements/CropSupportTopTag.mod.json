@@ -7,6 +7,21 @@
     "blocks": [
       {
         "value": "CUSTOM:CropSupportTop"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantTopAge4"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantTopAge5"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantTopFill1"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantTopFill2"
+      },
+      {
+        "value": "CUSTOM:TomatoPlantTopFill3"
       }
     ],
     "functions": [],

@@ -32,6 +32,15 @@ public class NewCropsModItems {
 	public static final RegistryObject<Item> TOMATO_PLANT_AGE_1 = block(NewCropsModBlocks.TOMATO_PLANT_AGE_1, null);
 	public static final RegistryObject<Item> TOMATO_PLANT_AGE_3 = block(NewCropsModBlocks.TOMATO_PLANT_AGE_3, null);
 	public static final RegistryObject<Item> TOMATO_PLANT_AGE_4 = block(NewCropsModBlocks.TOMATO_PLANT_AGE_4, null);
+	public static final RegistryObject<Item> TOMATO_PLANT_TOP_AGE_4 = block(NewCropsModBlocks.TOMATO_PLANT_TOP_AGE_4, null);
+	public static final RegistryObject<Item> TOMATO_PLANT_AGE_5 = block(NewCropsModBlocks.TOMATO_PLANT_AGE_5, null);
+	public static final RegistryObject<Item> TOMATO_PLANT_TOP_AGE_5 = block(NewCropsModBlocks.TOMATO_PLANT_TOP_AGE_5, null);
+	public static final RegistryObject<Item> TOMATO_PLANT_FILL_1 = block(NewCropsModBlocks.TOMATO_PLANT_FILL_1, null);
+	public static final RegistryObject<Item> TOMATO_PLANT_FILL_2 = block(NewCropsModBlocks.TOMATO_PLANT_FILL_2, null);
+	public static final RegistryObject<Item> TOMATO_PLANT_FILL_3 = block(NewCropsModBlocks.TOMATO_PLANT_FILL_3, null);
+	public static final RegistryObject<Item> TOMATO_PLANT_TOP_FILL_1 = block(NewCropsModBlocks.TOMATO_PLANT_TOP_FILL_1, null);
+	public static final RegistryObject<Item> TOMATO_PLANT_TOP_FILL_2 = block(NewCropsModBlocks.TOMATO_PLANT_TOP_FILL_2, null);
+	public static final RegistryObject<Item> TOMATO_PLANT_TOP_FILL_3 = block(NewCropsModBlocks.TOMATO_PLANT_TOP_FILL_3, null);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

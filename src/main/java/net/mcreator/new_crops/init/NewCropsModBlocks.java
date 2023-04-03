@@ -15,7 +15,16 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.new_crops.block.TomatoPlantTopFill3Block;
+import net.mcreator.new_crops.block.TomatoPlantTopFill2Block;
+import net.mcreator.new_crops.block.TomatoPlantTopFill1Block;
+import net.mcreator.new_crops.block.TomatoPlantTopAge5Block;
+import net.mcreator.new_crops.block.TomatoPlantTopAge4Block;
+import net.mcreator.new_crops.block.TomatoPlantFill3Block;
+import net.mcreator.new_crops.block.TomatoPlantFill2Block;
+import net.mcreator.new_crops.block.TomatoPlantFill1Block;
 import net.mcreator.new_crops.block.TomatoPlantBlock;
+import net.mcreator.new_crops.block.TomatoPlantAge5Block;
 import net.mcreator.new_crops.block.TomatoPlantAge4Block;
 import net.mcreator.new_crops.block.TomatoPlantAge3Block;
 import net.mcreator.new_crops.block.TomatoPlantAge2Block;
@@ -33,6 +42,15 @@ public class NewCropsModBlocks {
 	public static final RegistryObject<Block> TOMATO_PLANT_AGE_1 = REGISTRY.register("tomato_plant_age_1", () -> new TomatoPlantAge1Block());
 	public static final RegistryObject<Block> TOMATO_PLANT_AGE_3 = REGISTRY.register("tomato_plant_age_3", () -> new TomatoPlantAge3Block());
 	public static final RegistryObject<Block> TOMATO_PLANT_AGE_4 = REGISTRY.register("tomato_plant_age_4", () -> new TomatoPlantAge4Block());
+	public static final RegistryObject<Block> TOMATO_PLANT_TOP_AGE_4 = REGISTRY.register("tomato_plant_top_age_4", () -> new TomatoPlantTopAge4Block());
+	public static final RegistryObject<Block> TOMATO_PLANT_AGE_5 = REGISTRY.register("tomato_plant_age_5", () -> new TomatoPlantAge5Block());
+	public static final RegistryObject<Block> TOMATO_PLANT_TOP_AGE_5 = REGISTRY.register("tomato_plant_top_age_5", () -> new TomatoPlantTopAge5Block());
+	public static final RegistryObject<Block> TOMATO_PLANT_FILL_1 = REGISTRY.register("tomato_plant_fill_1", () -> new TomatoPlantFill1Block());
+	public static final RegistryObject<Block> TOMATO_PLANT_FILL_2 = REGISTRY.register("tomato_plant_fill_2", () -> new TomatoPlantFill2Block());
+	public static final RegistryObject<Block> TOMATO_PLANT_FILL_3 = REGISTRY.register("tomato_plant_fill_3", () -> new TomatoPlantFill3Block());
+	public static final RegistryObject<Block> TOMATO_PLANT_TOP_FILL_1 = REGISTRY.register("tomato_plant_top_fill_1", () -> new TomatoPlantTopFill1Block());
+	public static final RegistryObject<Block> TOMATO_PLANT_TOP_FILL_2 = REGISTRY.register("tomato_plant_top_fill_2", () -> new TomatoPlantTopFill2Block());
+	public static final RegistryObject<Block> TOMATO_PLANT_TOP_FILL_3 = REGISTRY.register("tomato_plant_top_fill_3", () -> new TomatoPlantTopFill3Block());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -45,6 +63,15 @@ public class NewCropsModBlocks {
 			TomatoPlantAge1Block.registerRenderLayer();
 			TomatoPlantAge3Block.registerRenderLayer();
 			TomatoPlantAge4Block.registerRenderLayer();
+			TomatoPlantTopAge4Block.registerRenderLayer();
+			TomatoPlantAge5Block.registerRenderLayer();
+			TomatoPlantTopAge5Block.registerRenderLayer();
+			TomatoPlantFill1Block.registerRenderLayer();
+			TomatoPlantFill2Block.registerRenderLayer();
+			TomatoPlantFill3Block.registerRenderLayer();
+			TomatoPlantTopFill1Block.registerRenderLayer();
+			TomatoPlantTopFill2Block.registerRenderLayer();
+			TomatoPlantTopFill3Block.registerRenderLayer();
 		}
 
 		@SubscribeEvent
